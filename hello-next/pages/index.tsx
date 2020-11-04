@@ -1,12 +1,12 @@
 import Head from 'next/head'
-
+import styles from './index.module.css';
 //Only component wise styling is applied not page wise
 //creates next js class and uses h1.<class>
 // to make it all we make it global
 function Heading(props) {
   return (
     <div>
-      <h1 className="red" >
+      <h1 className={styles.red} >
         {props.heading}
       </h1>
 
