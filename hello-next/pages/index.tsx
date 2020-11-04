@@ -1,4 +1,5 @@
 import Head from 'next/head'
+//only works if file name itself is this format i.e. <file>.module.css
 import styles from './index.module.css';
 //Only component wise styling is applied not page wise
 //creates next js class and uses h1.<class>
