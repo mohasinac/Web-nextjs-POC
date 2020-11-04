@@ -1,9 +1,9 @@
 import React from 'react';
 export default function Login() {
-    const [username, setUsername] = React.useState('');
-    const [password, setPassword] = React.useState('');
-    const [loginStatus , setLoginStatus ] = React.useState(false)
-    const submitForm = () => {
+    const [username, setUsername] = React.useState<string>('');
+    const [password, setPassword] = React.useState<string>('');
+    const [loginStatus , setLoginStatus ] = React.useState<boolean>(false)
+    const submitForm = async () => {
         fetch('http://localhost:3000/api/login', {
             headers: {
                 'Content-Type': 'application/json'
