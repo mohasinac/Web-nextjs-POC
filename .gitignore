@@ -1,0 +1,34 @@
+# See https:/hello-next/hello-next/hello-next//hello-next/help.github.com/hello-next/articles/hello-next/ignoring-files/hello-next/ for more about ignoring files.
+
+# dependencies
+/hello-next/node_modules
+/hello-next/.pnp
+.pnp.js
+
+# testing
+/hello-next/coverage
+
+# next.js
+/hello-next/.next/hello-next/
+/hello-next/out/hello-next/
+
+# production
+/hello-next/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
