@@ -1,6 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
+import { NextApiRequest, NextApiResponse } from "next"
+
+//localhost:3000/api/random
+//if we dont touch res we get continuous loading
+//inside pages only components
+// inside /api only apis and no components
+export default function (req: NextApiRequest, res: NextApiResponse) {
   res.statusCode = 200
-  res.json({ name: 'John Doe' })
+  res.json({ number: Math.floor(Math.random() * 10) })
 }
